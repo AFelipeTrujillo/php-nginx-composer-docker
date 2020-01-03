@@ -1,0 +1,20 @@
+version: '3'
+services:
+    web:
+        image: nginx:latest
+        ports:
+            - "8080:80"
+        volumes:
+            - ./app:/app
+            - ./site.conf:/etc/nginx/conf.d/site.conf
+            - ./logs:/var/log/nginx/
+        links:
+            - php
+    
+    php:
+        image: 'php:7-fpm'
+        volumes:
+            - ./app:/app
+    
+    componser:
+        image: 'composer'
