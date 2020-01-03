@@ -15,6 +15,3 @@ services:
         image: 'php:7-fpm'
         volumes:
             - ./app:/app
-    
-    componser:
-        image: 'composer'

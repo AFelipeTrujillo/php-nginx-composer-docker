@@ -1,0 +1,5 @@
+.DS_Store
+/logs
+/app/vendor
+/app/autoload.php
+/app/composer.lock

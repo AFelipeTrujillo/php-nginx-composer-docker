@@ -1,3 +1,5 @@
 <?php
+require_once "vendor/autoload.php";
 
-echo phpinfo();
+$hello = new Rivsen\Demo\Hello();
+echo $hello->hello();

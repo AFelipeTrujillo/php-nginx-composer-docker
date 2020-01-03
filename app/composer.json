@@ -1,0 +1,6 @@
+{
+    "name": "php-nginx-composer-docker",
+    "require": {
+        "rivsen/hello-world": "*"
+    }
+}
