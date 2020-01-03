@@ -22,6 +22,18 @@ services:
             - ./app:/app
 ```
 
+## Edit the hosts file from local machine
+
+```
+nano /etc/hosts
+```
+
+add this line
+
+```
+127.0.0.1 php-docker.local
+```
+
 ## How to run
 Previously, you need to install docker and docker compose. Please, go to the official site and install.
 
@@ -33,7 +45,7 @@ When you finish, please run the next command inside the folder project.
 ```
 docker-compose up
 ```
-## Hello World with Composer
+## Hello World with Composer + Docker
 
 ### Files
 
